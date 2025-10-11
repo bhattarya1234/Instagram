@@ -39,7 +39,7 @@ li {
 }
 img{
   height: auto;
-  width: 33.3%;
+  width: 100%;
 }
 
 
@@ -154,9 +154,7 @@ span {
     margin: 3vh;
     /* right: 0; */
   }
-img{
-  width:auto;
-}
+
   #logo {
     display: none;
   }
@@ -164,6 +162,7 @@ img{
     display: flex;
   }
 }
+
 
 
 
