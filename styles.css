@@ -290,15 +290,15 @@ span {
     border-radius: 50%;
   }
   .post {
-    height: 110%;
-    width: 110%;
+    height: auto;
+    width: 100%;
     padding: 2vh;
   }
   .posts {
     display: flex;
-    flex-direction: row;
-    width: 70%;
-    height: 60vh;
+    flex-direction: column;
+    width: 95%;
+    height: auto;
     /* background: rgb(118, 11, 154); */
     border-radius: 6px;
     margin: 3vh;
@@ -314,4 +314,5 @@ span {
     display: flex;
   }
 }
+
 
