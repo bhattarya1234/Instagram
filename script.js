@@ -23,7 +23,7 @@ const clicked = (action,trigger) => {
     localStorage.clear();
   }
   if (action === "messages") {
-    e.preventDefault()
+   trigger.preventDefault()
     document.getElementById("main").innerHTML = `
 <input type="email" id="toEmail" placeholder="Recipient Email"><br>
 <input type="text" id="subject" placeholder="Subject"><br>
@@ -120,4 +120,5 @@ function changeUsername() {
 window.addEventListener("load", () => {
   if (!validUser) window.location.href = "/Instagram/loginBeast.html";
 });
+
 
