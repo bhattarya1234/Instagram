@@ -39,7 +39,7 @@ li {
 }
 img{
   height: auto;
-  width: 100%;
+  width: calc(33.33% - 10px);
 }
 
 
@@ -138,7 +138,6 @@ span {
   span {
     display: none;
   }
-]
   .post {
     height: auto;
     width: 100%;
@@ -161,7 +160,12 @@ span {
   #hiddenLogo {
     display: flex;
   }
+  .posts img {
+  width: 100%;
+  height: auto;
 }
+}
+
 
 
 
