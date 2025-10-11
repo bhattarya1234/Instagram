@@ -1,0 +1,81 @@
+#left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  background: url("landing-3x.png") no-repeat center center;
+  background-size: cover;
+  width: 50%;
+  height: 100vh;
+}
+#right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 0;
+  width: 50%;
+  height: 100vh;
+}
+li {
+  list-style-type: none;
+}
+input {
+  background: #09080fe1;
+  outline: none;
+  border: none;
+  padding: 2vh;
+  margin-bottom: 1.5vh;
+  border: 0.5px solid rgba(237, 231, 231, 0.422);
+  border-radius: 3px;
+  width: 70%;
+  color: antiquewhite;
+}
+button {
+  background: #4c33d9e1;
+  border: none;
+  padding: 1.5vh;
+  margin-bottom: 2vh;
+  border-radius: 9px;
+  width: 70%;
+  color: antiquewhite;
+  cursor: pointer;
+}
+
+#or {
+  display: flex;
+  opacity: 0.5;
+}
+#line {
+  margin: 8px;
+}
+#singInOptions {
+  color: rgb(0, 149, 246);
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#forgot {
+  margin-top: 1vh;
+  opacity: 0.8;
+  line-height: 1.2;
+  font-weight: 10;
+}
+#suggestion {
+  padding: 2vh;
+  font-size: small;
+  opacity: 0.5;
+  width: 55%;
+}
+a {
+  text-decoration: none;
+  color: rgb(1, 179, 255);
+}
+#noAcc {
+  opacity: 0.8;
+  padding: 2vh;
+}

@@ -1,0 +1,22 @@
+ * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        user-select: none;
+      }
+      body {
+        min-height: 100vh;
+        width: 100%;
+        background-color: #000000;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        color: antiquewhite;
+      }
+      #container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+        width: 100%;
+      }

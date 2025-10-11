@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instagram</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="favicon12345.png" type="image/png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div id="loader"></div>
+  <div id="container">
+  <div id="hiddenLogo">
+       <h1>Instagram</h1> 
+       <input type="search" name="" class="search">
+<i class="fa-solid fa-user topPfp"></i>
+      </div>
+    <div id="leftNavbar">
+      <input type="search" name="" id="search" style="display:none; padding:3vh; border-radius:6px;outline:none;">
+      <h1 id="logo"
+        style="font-family:  'Brush Script MT', cursive; font-weight: 200; margin-bottom: 3vh;margin-left:10%;">
+        Instagram</h1>
+  
+      <ul>
+        <li onclick="clicked('home')"><a href="index.html"><i class="fa-regular fa-house"></i><span> Home</span></a></li>
+        <li onclick="clicked('search')"><a href="#"><i class="fa-solid fa-magnifying-glass"></i><span>Search</span></a></li>
+        <li onclick="clicked('reels')"><a href="instaVortex.html"><i class="fa-solid fa-meteor"></i> <span>Explore</span> </a></li>
+        <li onclick="clicked('messages')"><a href=""><i class="fa-regular fa-comment-dots"></i> <span>Messages</span></a></li>
+        <li onclick="clicked('notifications')"><a href="#"><i class="fa-regular fa-heart"></i> <span>Notifications</span></a></li>
+        <li onclick="clicked('create')"><a href="#"><i class="fa-regular fa-square-plus"></i><span>Create</span> </a></li>
+        <li onclick="clicked('dashboard')"><a href="#"><i class="fa-solid fa-chart-simple"></i> <span>Dashboard</span></a></li>
+        <li onclick="clicked('profile')"><a href="#"><i class="fa-solid fa-user"></i><span>Profile</span> </a></li>
+        <li onclick="clicked('more')"><a href="loginBeast.html"><i class="fa-solid fa-bars"></i> </a></li>
+      </ul>
+    </div>
+
+    <div id="main">
+      <div id="stories"></div>
+      <br>
+
+      <div id="postContainer"></div>
+
+      <div class="friendsSuggestions">
+        <div class="pfp">
+          <img src="https://picsum.photos/78" alt="" name="pfp" class="profilePic">
+          <div class="Accname name" onclick = "changeUsername()">ShadowMistx 🅐🅐🅡🅨🅐</div>
+        </div>
+
+        <br>
+        <h2 style="margin-left: 2vw;">Suggestions For You</h2>
+        <br>
+
+        <div class="suggestions">
+          <div class="pfp">
+            <img src="https://randomuser.me/api/portraits/men/99.jpg" alt="" name="pfp" class="profilePic">
+            <div class="name">MemesFlare
+              <span class ="fllwrs">followed by noone and 3..</span>
+            </div>
+          </div>
+
+          <div class="pfp">
+            <img src="https://randomuser.me/api/portraits/men/56.jpg" alt="" name="pfp" class="profilePic">
+            <div class="name">MinecraftFanClub
+              <span class ="fllwrs">followed by Begula and 5..</span>
+            </div>
+          </div>
+
+          <div class="pfp">
+            <img src="https://randomuser.me/api/portraits/men/16.jpg" alt="" name="pfp" class="profilePic">
+            <div class="name">NoOnesCares
+              <span class ="fllwrs">followed by Cloudy and 1..</span>
+            </div>
+          </div>
+
+          <div class="pfp">
+            <img src="https://randomuser.me/api/portraits/men/26.jpg" alt="" name="pfp" class="profilePic">
+            <div class="name">LearnCoding
+              <span class ="fllwrs">followed by ElonMusk..</span>
+            </div>
+          </div>
+
+          <div class="pfp">
+            <img src="https://randomuser.me/api/portraits/men/96.jpg" alt="" name="pfp" class="profilePic">
+            <div class="name">IT_humor
+              <span class ="fllwrs">followed by Billgates and 5..</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

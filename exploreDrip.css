@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+body {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #000000;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: antiquewhite;
+}
+#container {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+#leftNavbar {
+  display: block;
+  position: fixed;
+  height: 100vh;
+  color: antiquewhite;
+  left: 0;
+  border-right: 1px solid rgb(62, 56, 56);
+
+}
+
+ul {
+  list-style-type: none;
+}
+a,
+li {
+  padding: 2.8vh;
+  text-decoration: none;
+  color: #f0ffff;
+  font-size: 1.02em;
+}
+img{
+  height: auto;
+  width: 33.3%;
+}
+
+
+#main{
+  position: static;
+ right:0;
+ width: 80%;
+ margin-left: auto;
+
+}
+.topPfp, h1{
+  margin: 10px;
+
+}
+.search{
+  background:rgb(54, 54, 54);
+  border: none;
+  border-radius: 7px;
+  padding: 0vh;
+  outline: non;
+overflow: hidden;
+margin-right: 10px;
+height: 7vh;
+margin: 10px;
+color: aliceblue;
+}
+.fa-regular,
+.fa-solid {
+  font-size: 1.5em;
+  color: #c9b8b8;
+}
+span {
+  margin-left: 1vh;
+}
+
+.fllwrs {
+  width: 100%;
+  font-size: 0.9vw;
+}
+
+#hiddenLogo {
+  position: static;
+  top: 0;
+  font-family: "Brush Script MT", cursive;
+  /* font-weight: 200; */
+  display: none;
+}
+/* For tablets — when your user got half a laptop and half a phone 😎 */
+@media screen and (max-width: 768px) {
+  #leftNavbar {
+    display: block;
+    position: fixed;
+    height: 100vh;
+    width: 20%;
+    color: antiquewhite;
+    left: 0;
+    border-right: 1px solid rgb(62, 56, 56);
+  }
+  span {
+    display: none;
+  }
+
+
+}
+
+/* For phones — aka tiny-screen struggle devices 📱 */
+@media screen and (max-width: 480px) {
+  #leftNavbar ul {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    top: 100vw;
+  }
+  #leftNavbar {
+    z-index: 999;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    height: 66px;
+    top: 100vw;
+    border-top: 1px solid whitesmoke;
+    background: #1511225a;
+  }
+  #leftNavbar i {
+    font-size: 15px;
+    margin-right: 0vh;
+    margin-left: 0vh;
+    left:0;
+  }
+ 
+  span {
+    display: none;
+  }
+
+
+  #logo {
+    display: none;
+  }
+  #hiddenLogo {
+    display: flex;
+  }
+}

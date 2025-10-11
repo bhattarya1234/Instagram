@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instagram-Login</title>
+      <link rel="icon" href="favicon12345.png" type="image/png">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  <link rel="stylesheet" href="authWizard.css">
+  <link rel="stylesheet" href="global.css">
+  </head>
+  <body>
+    <div id="container">
+      <div id="left"></div>
+      <div id="right">
+        <h1
+          id="logo"
+          style="
+            font-family: 'Brush Script MT';
+            font-weight: 200;
+            margin-bottom: 3vh;
+            font-size: xxx-large;
+          "
+        >
+          Instagram
+        </h1>
+        <form action="">
+          <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder="Phone number, username, or email"
+          />
+          <input type="password" name="" id="password" placeholder="password" />
+          <button id ="btn">Log in</button>
+          <div id="or">
+            <div class="line">____________</div>
+            <p id="line">OR</p>
+            <div class="line">_____________</div>
+          </div>
+          <br />
+          <div id="singInOptions" onclick="alert('Bro.. this feature is underMantinance 🤫')">
+            <i
+              class="fa-brands fa-facebook"
+              style="color: #74c0fc; transform: scale(1.5); margin-right: 1vh"
+            ></i>
+            Log in with facebook
+          </div>
+          <div
+            id="forgot"
+            onclick='alert("Cant you remember such a small passwords? 🤬")'
+          >
+            Forgot Password?
+          </div>
+          <p id="suggestion">
+            You can also <a href="https://help.instagram.com/">report content you believe is unlawful</a> in your country
+            without logging in.
+          </p>
+          <div id="noAcc" onclick="alert('Bro.. this feature is underMantinance 🤫')">Don't have an account? Sign up
+</div>
+        </form>
+      </div>
+    </div>
+    <script src="credentialCrusher.js"></script>
+  </body>
+</html>
