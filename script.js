@@ -12,7 +12,7 @@ const [search, logo] = [
  */
 let Appear;
 Appear = false;
-const clicked = (action) => {
+const clicked = (action,trigger) => {
   console.log("clicked running...", action, Appear); // debug line
 
   if (action === "search") {
@@ -23,6 +23,7 @@ const clicked = (action) => {
     localStorage.clear();
   }
   if (action === "messages") {
+    e.preventDefault()
     document.getElementById("main").innerHTML = `
 <input type="email" id="toEmail" placeholder="Recipient Email"><br>
 <input type="text" id="subject" placeholder="Subject"><br>
@@ -119,3 +120,4 @@ function changeUsername() {
 window.addEventListener("load", () => {
   if (!validUser) window.location.href = "/Instagram/loginBeast.html";
 });
+
